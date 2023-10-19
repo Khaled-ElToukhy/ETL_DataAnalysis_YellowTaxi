@@ -33,3 +33,10 @@ localhost:10000
 ```
 ("postgresql://user:user@pgdatabase/ny_taxi")
 ```
+
+### Acknowledgements
+* Yellow taxi data: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+* Matplotlib: https://matplotlib.org/
+* Seaborn: https://seaborn.pydata.org/
+* Pandas: https://pandas.pydata.org/
+* SQLAlchemy: https://www.sqlalchemy.org/
