@@ -1,0 +1,7 @@
+winpty docker run -it \
+	-e POSTGRES_USERNAME="roro" \
+	-e POSTGRES_PASSWORD="roro" \
+	-e POSTGRES_DB="ny_taxi" \
+	-v D://Zoomcamp_DataEngineering//week_1//nu_taxi_postgres_data:/var/lib/postgres/data \
+	-p 5432:5432
+	postgres:13

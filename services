@@ -1,0 +1,19 @@
+winpty docker run -it \
+  -e POSTGRES_USER="roro" \
+  -e POSTGRES_PASSWORD="roro" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v d://Zoomcamp_DataEngineering//week_1//ny_taxi_postgres_data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  postgres:13
+
+docker run -it --name postgres_data \
+-e POSTGRES_USER=roro \
+-e POSTGRES_PASSWORD=roro \
+-e POSTGRES_DB=ny_taxi \
+-p 5432:5432 \
+-v d://Zoomcamp_DataEngineering//week_1//ny_taxi_postgres_data:/var/lib/postgresql/data \
+postgres:13
+
+pgcli -h localhost -p 5432 -U roro -W ny_taxi
+
+winpty docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="titanic" -v d://Zoomcamp_DataEngineering//week_1//ny_taxi_postgres_data:/var/lib/postgresql -p 5432:5432 postgres:13
