@@ -21,3 +21,15 @@ pip install -r requirments.txt
 ```
 docker-compose up -d
 ```
+2. Login to pgadmin main page to start querying 
+```
+localhost:8080
+```
+3. Open the required notebook to start coding (jupyter/all-spark)
+```
+localhost:10000
+```
+4. Access the Postgresql database using sqlalchemy on port 5432
+```
+("postgresql://user:user@pgdatabase/ny_taxi")
+```
