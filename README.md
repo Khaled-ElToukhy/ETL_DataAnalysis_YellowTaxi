@@ -9,3 +9,9 @@
 pip install -r requirments.txt
 
 ```
+
+### Project Structure
+1. DockerFile: containing the specifications of the image building to prepare to ingest the data to postgres
+2. Yaml file : containing the environments used in to build containers
+3. Ingest script : python file to ingest the taxi data to postgres DB
+4. Data analysis notebook : contains every command run in the analysis project and transformed into python script
